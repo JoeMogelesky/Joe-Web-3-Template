@@ -352,6 +352,18 @@ template {
 /* =============
     Base
 ============= */
+.first {
+  background-color: cyan;
+}
+
+.second {
+  background-color: red;
+}
+
+.third {
+  background-color: lime;
+}
+
 .container {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -387,18 +399,6 @@ ul li {
   .hide-for-lg {
     display: none;
   }
-}
-
-.first {
-  background-color: cyan;
-}
-
-.second {
-  background-color: red;
-}
-
-.third {
-  background-color: lime;
 }
 
 /* =============
