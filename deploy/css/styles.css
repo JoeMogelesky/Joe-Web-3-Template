@@ -352,6 +352,25 @@ template {
 /* =============
     Base
 ============= */
+.container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    grid-template-columns: auto 1320px auto;
+  }
+}
+.container .content {
+  grid-area: content;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -421,16 +440,16 @@ nav {
     width: 100%;
   }
 }
-nav aside {
+nav div {
   display: flex;
   justify-content: flex-end;
 }
-nav aside button {
+nav div button {
   background-color: transparent;
   border: none;
   color: #fff;
 }
-nav aside button:hover {
+nav div button:hover {
   cursor: pointer;
 }
 nav ul {
@@ -485,52 +504,43 @@ nav ul li:first-child {
 /* =============
     Header
 ============= */
-header {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
+header.container {
   padding: 24px 0;
   position: fixed;
   width: 100%;
   background-color: #fff;
 }
-@media (min-width: 1400px) {
-  header {
-    grid-template-columns: auto 1440px auto;
-  }
-}
-header div {
-  grid-area: header;
+header.container .content {
   display: grid;
   grid-template-columns: 50% auto;
   grid-template-areas: "logo burger";
 }
 @media (min-width: 992px) {
-  header div {
+  header.container .content {
     grid-template-areas: "logo nav";
   }
 }
-header div .logo {
+header.container .content .logo {
   color: #000;
   font-size: 40px;
 }
-header div .burger-container {
+header.container .content .burger-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 @media (min-width: 992px) {
-  header div .burger-container {
+  header.container .content .burger-container {
     display: none;
   }
 }
-header div .burger-container button {
+header.container .content .burger-container button {
   border: none;
   background-color: transparent;
   color: #000;
   font-size: 20px;
 }
-header div .burger-container button:hover {
+header.container .content .burger-container button:hover {
   cursor: pointer;
 }
 
