@@ -66,6 +66,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/first.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/html\/first.html",
+      "oF" : 2
+    },
     "\/dev\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -264,6 +272,22 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/second.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/html\/second.html",
+      "oF" : 2
+    },
+    "\/dev\/third.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/html\/third.html",
+      "oF" : 2
     },
     "\/README.md" : {
       "cB" : 0,
